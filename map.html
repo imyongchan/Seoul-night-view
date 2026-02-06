@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>서울시 야경 명소 정보</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5358f7fb468f82d30578b92126b70a82"></script>
+  <link rel="stylesheet" href="map.css">
+
+<body>
+    <!-- 사이드바 -->
+    <div class="sidebar">
+        
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <div class="logo">
+                <div class="logo-icon"><!-- 달 아이콘 --></div>
+                <span>야경맛집</span>
+            </div>
+        </a>
+
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <div class="menu-item">
+                <div class="menu-icon1"><!-- 홈 아이콘 --></div>
+                <div>
+                    <div class="menu-title">Home</div>
+                    <div class="menu-subtitle">메인 페이지</div>
+                </div>
+            </div>
+        </a>
+        
+        <a href="search.html" style="text-decoration: none; color: inherit;">
+            <div class="menu-item ">
+                <div class="menu-icon2"><!-- 검색 아이콘 --></div>
+                <div>
+                    <div class="menu-title">야경 명소 검색</div>
+                    <div class="menu-subtitle">원하는 야경 명소를 검색해보세요</div>
+                </div>
+            </div>
+        </a>   
+
+        <a href="map.html" style="text-decoration: none; color: inherit;">
+            <div class="menu-item active">
+                <div class="menu-icon3"><!-- 지도 아이콘 --></div>
+                <div>
+                    <div class="menu-title">야경 명소 지도</div>
+                    <div class="menu-subtitle">지도에서 야경 명소를 확인하세요</div>
+                </div>
+            </div>
+        </a>    
+
+        <a href="recommend.html" style="text-decoration: none; color: inherit;">
+            <div class="menu-item">
+                <div class="menu-icon4"><!-- 하트 아이콘 --></div>
+                <div>
+                    <div class="menu-title">추천하기</div>
+                    <div class="menu-subtitle">나만의 야경 명소를 추천해주세요</div>
+                </div>
+            </div>
+        </a>
+
+        <div class="sidebar-footer">
+            서울의 아름다운 밤을 탐험<br>
+            © 2025 야경맛집
+        </div>
+    </div>
+
+     <!--메인컨텐츠-->
+    <div class="main-content">
+        <div class="search-container">
+            <h1 class="page-title">야경 명소 지도</h1>
+            <p class="page-subtitle">현재 위치 주변의 아름다운 야경 명소를 찾아보세요</p>
+            
+             <!-- 지도 컨테이너 -->
+            <div class="map-container">
+               
+                <!-- 지도 영역 -->
+                <div class="map-wrapper" >
+                    <div class="map-controls">
+                        <button class="location-button" onclick="findMyLocation()">
+                            📍 내 위치 찾기
+                        </button>
+                    </div>
+                    <div class="map-view">
+                        <div id="map" style="width:100%;height:100%;"></div>
+                    </div>
+                </div>
+
+                <!-- 사이드 패널 -->
+                <div class="side-panel">
+                    <div class="panel-icon">📍</div>
+                    <h3 class="panel-title">야경 명소 찾기</h3>
+                  
+                    <button class="panel-button" >내 주변 야경명소 찾기 </button>
+                </div>
+           </div>
+    </div>
+   <script src="map.js"></script>
+</body>
+</html>
+</html>

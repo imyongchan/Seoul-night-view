@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>서울시 야경 명소 정보</title>
+  <script src="recommend.js" defer></script>
+  <link rel="stylesheet" href="recommend.css">
+
+<body>
+  <div class="sidebar">
+    
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+      <div class="logo">
+        <div class="logo-icon"></div>
+        <span>야경맛집</span>
+      </div>
+    </a>
+
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+      <div class="menu-item">
+        <div class="menu-icon1"></div>
+        <div>
+          <div class="menu-title">Home</div>
+          <div class="menu-subtitle">메인 페이지</div>
+        </div>
+      </div>
+    </a>
+    
+    <a href="search.html" style="text-decoration: none; color: inherit;">
+      <div class="menu-item ">
+        <div class="menu-icon2"></div>
+        <div>
+          <div class="menu-title">야경명소 검색</div>
+          <div class="menu-subtitle">원하는 야경 명소를 검색해보세요</div>
+        </div>
+      </div>
+    </a> 
+
+    <a href="map.html" style="text-decoration: none; color: inherit;">
+      <div class="menu-item ">
+        <div class="menu-icon3"></div>
+        <div>
+          <div class="menu-title">야경 명소 지도</div>
+          <div class="menu-subtitle">지도에서 야경 명소를 확인하세요</div>
+        </div>
+      </div>
+    </a> 
+
+    <a href="recommend.html" style="text-decoration: none; color: inherit;">
+      <div class="menu-item active">
+        <div class="menu-icon4"></div>
+        <div>
+          <div class="menu-title">추천하기</div>
+          <div class="menu-subtitle">나만의 야경 명소를 추천해주세요</div>
+        </div>
+      </div>
+    </a>
+
+    <div class="sidebar-footer">
+      서울의 아름다운 밤을 탐험<br>
+      © 2025 야경맛집
+    </div>
+  </div>
+
+      <!--메인컨텐츠-->
+    <div class="main-content">
+        <div class="search-container">
+            <h1 class="page-title">야경 명소 추천하기</h1>
+            <p class="page-subtitle">당신이 다녀온 멋진 야경 명소를 다른 사람들과 공유해주세요!</p>
+
+        <form class="recommend-form">
+            
+            <h3>📋 기본 정보</h3>
+            <div class="form-group">
+                <label>야경 명소 이름 *</label>
+                 <input type="text"  class="place" placeholder="ex: 북악산 팔각정 ">
+            </div>
+           
+            <div class="form-row">
+                <div class="form-group half">
+                <label>지역(구) </label>
+                    <select>
+                        <option>지역을 선택하세요</option>
+                                <option value="용산구">용산구</option>
+                                <option value="중구">중구</option>
+                                <option value="동작구">동작구</option>
+                                <option value="종로구">종로구</option>
+                                <option value="영등포구">영등포구</option>
+                                <option value="광진구">광진구</option>
+                                <option value="성동구">성동구</option>
+                                <option value="마포구">마포구</option>
+                                <option value="종로구">종로구</option>
+                                <option value="서초구">서초구</option>
+                                <option value="송파구">송파구</option>
+                                <option value="강서구">강서구</option>
+                                <option value="강동구">강동구</option>
+                                <option value="구로구">구로구</option>
+                                <option value="노원구">노원구</option>
+                    </select>
+                </div>
+                
+                <div class="form-group half">
+                    <label>방문 날짜 *</label>
+                    <input type="date" class= "date" >
+                </div>
+            </div>
+           
+           
+            <div class="form-group">
+                <label>상세 주소 *</label>
+                <input type="text"  class= "address" placeholder="ex: 서울특별시 용산구 남산공원길 105" >
+            </div>
+
+            <h3>🗒️ 상세 설명</h3>
+            <div class="form-group">
+                <label>야경 명소 소개 </label>
+                <textarea rows="4" placeholder="자유롭게 소개해주세요. (500자 이내)"></textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group half">
+                <label>최적 방문 시간</label>
+                <input type="text" placeholder="ex: 일몰 직후 (오후 7~9시)">
+                </div>
+                <div class="form-group half">
+                <label>교통편 안내</label>
+                <input type="text" placeholder="ex: 지하철 4호선 명동역 3번 출구에서 도보 10분">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>추천 팁</label>
+                <textarea rows="3" placeholder="방문 시 알아두면 좋은 팁이나 주의사항을 알려주세요."></textarea>
+            </div>
+
+            <h3>👨🏻‍💼 추천인 정보</h3>
+            <div class="form-row">
+                <div class="form-group half">
+                <label>이름 *</label>
+                <input type="text" class=" name" placeholder="추천인 이름 또는 닉네임">
+                </div>
+                <div class="form-group half">
+                <label>이메일 * </label>
+                <input type="email" class="email" placeholder="example@email.com">
+                </div>
+            </div>
+
+            <button type="submit" id="submit-btn" class="submit-btn"> 추천하기</button>
+        </form>
+    </div>
+</body>
+</html>

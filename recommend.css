@@ -1,0 +1,222 @@
+  @charset "UTF-8";
+        
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Malgun Gothic', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* 사이드바 */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 300px;
+            height: 100vh;
+            background-color: #1a1f35;
+            color: white;
+            padding: 20px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background-image: url('img/moon.png');
+            background-size: contain;  /* 이미지 비율 유지 */
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            
+        }
+
+        .menu-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .menu-item.active {
+            background-color: #2563eb;
+        }
+
+        .menu-icon1 {
+            /* 메뉴 아이콘 이미지 */
+            width: 24px;
+            height: 24px;
+            background-image: url('img/home.png');
+            background-size: contain;  /* 이미지 비율 유지 */
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+        .menu-icon2 {
+            width: 24px;
+            height: 24px;
+            background-image: url('img/search.png');
+            background-size: contain;  /* 이미지 비율 유지 */
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+        .menu-icon3 {
+            width: 24px;
+            height: 24px;
+            background-image: url('img/marker.png');
+            background-size: contain;  /* 이미지 비율 유지 */
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .menu-icon4 {
+            width: 24px;
+            height: 24px;
+            background-image: url('img/favorite.png');
+            background-size: contain;  /* 이미지 비율 유지 */
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+
+        .menu-title {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .menu-subtitle {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 4px;
+        }
+
+        .sidebar-footer {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* 메인 콘텐츠 */
+        .main-content {
+            margin-left: 800px;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .search-container {
+            max-width: 2000px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        } 
+
+        .page-title {
+            font-size: 42px;
+            font-weight: bold;
+            color: #1a1f35;
+            margin-bottom: 20px;
+        }
+
+        .page-subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 50px;
+        }
+
+
+
+        h3 {
+            margin-top: 30px;
+            font-size: 35px;
+            color: #1e3358;
+            border-bottom: 2px solid #e0e6f0;
+            padding-bottom: 5px;
+        }
+
+            /* 폼 스타일 */
+            .recommend-form {
+            background: #fff;
+            border-radius: 8px;
+            padding: 25px 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            max-width: 1200px;
+            }
+
+            .form-group {
+        
+            display: flex;
+            flex-direction: column;
+            }
+
+            .form-group label {
+            font-weight: 600;
+            margin-bottom: 6px;
+            font-size: 22px;
+            margin-top: 30px;
+            }
+
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+            padding: 10px;
+            border: 1px solid #d2d7e2;
+            border-radius: 6px;
+            font-size: 18px;
+            outline: none;
+            }
+
+            .form-group input:focus,
+            .form-group select:focus,
+            .form-group textarea:focus {
+            border-color: #5b8efc;
+            box-shadow: 0 0 0 2px rgba(91,142,252,0.15);
+            }
+
+            .form-row {
+            display: flex;
+            gap: 20px;
+            }
+
+            .form-group.half {
+            flex: 1;
+            }
+
+            /* 버튼 */
+            .submit-btn {
+            background-color: #2563eb;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 12px 24px;
+            cursor: pointer;
+            font-size: 25px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 40px;
+            }
+
+            .submit-btn:hover {
+            background-color: #4a7de5;
+            }

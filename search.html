@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>서울시 야경 명소 정보</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="search.js"></script>
+  <link rel="stylesheet" href="search.css">
+
+<body>
+    <!-- 사이드바 -->
+    <div class="sidebar">
+        
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <div class="logo">
+                <div class="logo-icon"><!-- 달 아이콘 --></div>
+                <span>야경맛집</span>
+            </div>
+        </a>
+
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <div class="menu-item">
+                <div class="menu-icon1"><!-- 홈 아이콘 --></div>
+                <div>
+                    <div class="menu-title">Home</div>
+                    <div class="menu-subtitle">메인 페이지</div>
+                </div>
+            </div>
+        </a>
+        
+        <a href="search.html" style="text-decoration: none; color: inherit;">
+            <div class="menu-item active">
+                <div class="menu-icon2"><!-- 검색 아이콘 --></div>
+                <div>
+                    <div class="menu-title">야경명소 검색</div>
+                    <div class="menu-subtitle">원하는 야경 명소를 검색해보세요</div>
+                </div>
+            </div>
+        </a>   
+
+        <a href="map.html" style="text-decoration: none; color: inherit;">
+            <div class="menu-item">
+                <div class="menu-icon3"><!-- 지도 아이콘 --></div>
+                <div>
+                    <div class="menu-title">야경 명소 지도</div>
+                    <div class="menu-subtitle">지도에서 야경 명소를 확인하세요</div>
+                </div>
+            </div>
+        </a>    
+
+        <a href="recommend.html" style="text-decoration: none; color: inherit;">
+            <div class="menu-item">
+                <div class="menu-icon4"><!-- 하트 아이콘 --></div>
+                <div>
+                    <div class="menu-title">추천하기</div>
+                    <div class="menu-subtitle">나만의 야경 명소를 추천해주세요</div>
+                </div>
+            </div>
+        </a>
+
+        <div class="sidebar-footer">
+            서울의 아름다운 밤을 탐험<br>
+            © 2025 야경맛집
+        </div>
+    </div>
+
+     <div class="main-content">
+        <div class="search-container">
+            <h1 class="page-title" >야경 명소 검색</h1>
+            <p class="page-subtitle">원하는 조건으로 서울의 아름다운 야경 명소를 찾아보세요</p>
+
+            <!-- 검색 필터 -->
+            <div class="search-filters">
+
+                    <!--키워드 검색 -->
+                    <div class="filter-group">
+                        <label class="filter-label">키워드 검색</label>
+                        <div class="search-input-wrapper">
+                            <span class="search-icon">🔍</span>
+                            <input type="text" id="searchKeyword" class="search-input" placeholder="명소명 검색">
+                        </div>
+                    </div>
+
+                    <!--지역검색-->
+                    <div class="filter-group">
+                        <label class="filter-label">지역 선택</label>
+                        <select id="regionSelect" class="filter-select">
+                            <option value="전체">전체</option>
+                            <option value="용산구">용산구</option>
+                            <option value="중구">중구</option>
+                            <option value="동작구">동작구</option>
+                            <option value="종로구">종로구</option>
+                            <option value="영등포구">영등포구</option>
+                            <option value="광진구">광진구</option>
+                            <option value="성동구">성동구</option>
+                            <option value="마포구">마포구</option>
+                            <option value="종로구">종로구</option>
+                            <option value="서초구">서초구</option>
+                            <option value="송파구">송파구</option>
+                            <option value="강서구">강서구</option>
+                            <option value="강동구">강동구</option>
+                            <option value="구로구">구로구</option>
+                            <option value="노원구">노원구</option>
+                        </select>
+                    </div>
+                    <!--요금 선택-->
+                    <div class="filter-group">
+                        <label class="filter-label">요금 구분</label>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-price="전체">전체</button>
+                            <button class="filter-btn" data-price="무료">무료</button>
+                            <button class="filter-btn" data-price="유료">유료</button>
+                        </div>
+                    </div>
+                
+
+                    <!--액션버튼-->
+                    <div class="search-actions">
+                        <button id="btn_load" class="search-button" >정보 가져오기</button>
+                        <button id="btn_remove" class="remove-button" > 지우기</button>
+                    </div>
+            </div>
+
+                    <!-- 검색 결과 카운트 (검색 후 표시) -->
+                    <div id="resultCount" class="result-count" style="display: none;">
+                        📊<span id="countNumber"></span>개의 야경 명소를 찾았습니다
+                    </div>
+                
+            
+            <div id="nightViewList" class="card-container"></div>
+    </div>
+
+
+</body>
+</html>
+</html>

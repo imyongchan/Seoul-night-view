@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>서울시 야경 명소 정보</title>
+  <script src="https://use.fontawesome.com/926fe18a63.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="search.js"></script>
+  <link rel="stylesheet" href="index.css">
+
+
+</head>
+<body>
+
+    <div class="hamburger">
+        <i class="fa fa-bars"></i>
+    </div>
+
+    <!-- 사이드바 -->
+    <div class="sidebar" id="sidebar">
+         <!-- X 버튼 추가 -->
+        <div class="close-btn">
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+                <div class="logo">
+                    <div class="logo-icon"><!-- 달 아이콘 --></div>
+                    <span>야경맛집</span>
+                </div>
+            </a>
+        </div>   
+
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <div class="menu-item active">
+                <div class="menu-icon1"><!-- 홈 아이콘 --></div>
+                <div>
+                    <div class="menu-title">Home</div>
+                    <div class="menu-subtitle">메인 페이지</div>
+                </div>
+            </div>
+        </a>
+        
+        <a href="search.html" style="text-decoration: none; color: inherit;">
+            <div class="menu-item">
+                <div class="menu-icon2"><!-- 검색 아이콘 --></div>
+                <div>
+                    <div class="menu-title">야경 명소 검색</div>
+                    <div class="menu-subtitle">원하는 야경 명소를 검색해보세요</div>
+                </div>
+            </div>
+        </a>   
+
+        <a href="map.html" style="text-decoration: none; color: inherit;">
+            <div class="menu-item">
+                <div class="menu-icon3"><!-- 지도 아이콘 --></div>
+                <div>
+                    <div class="menu-title">야경 명소 지도</div>
+                    <div class="menu-subtitle">지도에서 야경 명소를 확인하세요</div>
+                </div>
+            </div>
+        </a>    
+
+        <a href="recommend.html" style="text-decoration: none; color: inherit;">
+            <div class="menu-item">
+                <div class="menu-icon4"><!-- 하트 아이콘 --></div>
+                <div>
+                    <div class="menu-title">추천하기</div>
+                    <div class="menu-subtitle">나만의 야경 명소를 추천해주세요</div>
+                </div>
+            </div>
+        </a>
+
+        <div class="sidebar-footer">
+            서울의 아름다운 밤을 탐험<br>
+            © 2025 야경맛집<br>
+            제작: 김용찬<br>
+            yongchan01045@naver.com
+        </div>
+    </div>
+
+    <!-- 메인 콘텐츠 -->
+    <div class="main-content">
+        <!-- 히어로 섹션 -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>
+                    아름다운 서울의 밤을<br>
+                    <span class="highlight">일상에서 잠시 벗어나</span><br>
+                    여유로움을 느끼세요
+                </h1>
+                <p>
+                    서울의 숨겨진 야경 명소부터 유명한 전망대까지<br>
+                    특별한 밤을 만들어줄 완벽한 장소를 찾아보세요
+                </p>
+                <div class="hero-buttons">
+                    <a href="search.html" style="text-decoration: none; color: inherit;">
+                    <button class="btn btn1">
+                        🔍 야경 명소 찾기
+                    </button>
+                    </a>
+                    <a href="map.html" style="text-decoration: none; color: inherit;">
+                    <button class="btn btn2">
+                        📍 지도에서 보기
+                    </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 서비스 섹션 -->
+        <section class="services-section">
+            
+            <h2 class="section-title">야경맛집에서는..</h2>
+            <p class="section-subtitle">서울의 야경을 더욱 특별하게 만들어줄 다양한 기능들을 만나보세요</p>
+
+            <div class="services-grid">
+                <a href="search.html" style="text-decoration: none; color: inherit;">
+                <div class="service-card">
+                    <div class="service-icon purple"><!-- 검색 아이콘 --></div>
+                    <h3 class="service-title">야경 명소 검색</h3>
+                    <p class="service-description">원하는 지역, 태마, 가격대별로 야경 명소를 검색할 수 있습니다. 맞춤형 필터로 원하는 장소를 쉽게 찾으세요.</p>
+                </div>
+                </a>
+
+                <a href="map.html" style="text-decoration: none; color: inherit;">
+                <div class="service-card">
+                    <div class="service-icon green"><!-- 지도 아이콘 --></div>
+                    <h3 class="service-title">야경 명소 지도</h3>
+                    <p class="service-description">지도에서 야경 명소의 위치를 확인하고 주변 정보를 한눈에 알아보세요. </p>
+                </div>
+                </a>
+
+                <a href="recommend.html" style="text-decoration: none; color: inherit;">
+                <div class="service-card">
+                    <div class="service-icon red"><!-- 하트 아이콘 --></div>
+                    <h3 class="service-title">추천하기</h3>
+                    <p class="service-description">나만 알고 있는 숨은 야경 명소를 다른 사용자들과 공유해보세요. 여러분의 추천이 새로운 발견이 됩니다.</p>
+                </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- TOP 3 섹션 -->
+        <section class="top3-section">
+            <h2 class="section-title">이번달 인기 야경 맛집 TOP 3</h2>
+            <p class="section-subtitle">가장 많은 사람들 보고 있는 서울의 야경 명소들을 만나보세요</p>
+
+            <div class="places-grid">
+                <!-- 1위 -->
+                <div class="place-card">
+                    <div class="place-image-wrapper">
+                        <!-- 남산서울타워 이미지 -->
+                        <div class="place-image1" ></div>
+                        <div class="place-badge">#1</div>
+                    </div>
+                    <div class="place-content">
+                        <div class="place-header">
+                            <h3 class="place-name">남산서울타워</h3>
+                            
+                        </div>
+                        <div class="place-address">📍 용산구 남산공원길 105</div>
+                        <p class="place-description">서울의 대표적인 야경 명소로 360도 파노라마 뷰를 감상할 수 있습니다.</p>
+                        <div class="place-info">
+                            <div class="place-info-item">🕐 10:00 - 23:00</div>
+                            <div class="place-info-item">💰 성인 16,000원</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2위 -->
+                <div class="place-card">
+                    <div class="place-image-wrapper">
+                        <!-- 반포한강공원 이미지 -->
+                        <div class="place-image2"></div>
+                        <div class="place-badge">#2</div>
+                       
+                    </div>
+                    <div class="place-content">
+                        <div class="place-header">
+                            <h3 class="place-name">반포한강공원 무지개다리</h3>
+                            
+                        </div>
+                        <div class="place-address">📍 서초구 반포동</div>
+                        <p class="place-description">화려한 분수쇼와 함께 한강의 야경을 즐길 수 있는 최고의 장소입니다.</p>
+       
+                        <div class="place-info">
+                            <div class="place-info-item">🕐 24시간</div>
+                            <div class="place-info-item">💰 무료</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3위 -->
+                <div class="place-card">
+                    <div class="place-image-wrapper">
+                        <!-- 롯데월드타워 이미지 -->
+                        <div class="place-image3" ></div>
+                        <div class="place-badge">#3</div>
+                    </div>
+                    <div class="place-content">
+                        <div class="place-header">
+                            <h3 class="place-name">롯데월드타워 서울스카이</h3>
+                            
+                        </div>
+                        <div class="place-address">📍 송파구 올림픽로 300</div>
+                        <p class="place-description">국내 최고층에서 바라보는 서울 전경은 잊을 수 없는 감동을 선사합니다.</p>
+                
+                        <div class="place-info">
+                            <div class="place-info-item">🕐 10:00 - 22:00</div>
+                            <div class="place-info-item">💰 성인 29,000원</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
+
